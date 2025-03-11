@@ -17,15 +17,14 @@
         <thead><tr><th>URL</th><th>Name</th></tr></thead>
         <?php
             $persons = [
+                "Error Based"=>"error.php",
+                "Union"=>"union.php",
                 "Basic Login. Bypass the login page."=>"login.php",
                 "Bit Better Login. Bypass the login page."=>"login2.php",
                 "Common US Names Query. Extract data from secret tables."=>"person.php", 
                 "Improved Common US Names Query. Extract data from secret tables."=>"person2.php", 
                 "Blind Lookup. Extract data using blind sql injection (hard)."=>"blind.php", 
                 "Reset. Reset the entire mysql database."=>"reset.php",
-
-                "Error Based"=>"error.php",
-                "Union"=>"union.php",
             ];
             foreach($persons as $name=>$url) {
                 echo '<tr>';
